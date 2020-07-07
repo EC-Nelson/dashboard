@@ -1,0 +1,334 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+body{
+  box-sizing: border-box;
+    font-family: inter;
+    margin: 0;
+    background-image: linear-gradient(hsl(232, 19%, 15%) 0%, hsl(232, 19%, 15%) 30.5%, transparent 10%, hsl(230, 17%, 14%) 30.5%, hsl(230, 17%, 14%) 100%, transparent 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em 11.5em 1em 11.5em;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+#top{
+  box-sizing: border-box;
+  outline: 1px solid re;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.dark-col-1{
+  color: white;
+}
+.dark-bgcol-1{
+  background-color: hsl(228, 28%, 20%);
+}
+.dark-col-2{
+  color: hsl(228, 34%, 66%);
+}
+
+.dark-text-1{
+  font-size: 0.8em;
+}
+
+.heading{
+  box-sizing: border-box;
+  outline: 1px solid re;
+  width: 50%;
+}
+
+#title{
+  outline: 1px solid re;
+  margin-bottom: 0;
+}
+#total-followers{
+  outline: 1px solid re;
+}
+
+.theme-switch{
+  outline: 1px solid blu;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+#mode-name{
+  outline: 1px solid re;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-right: 1em;
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14.5em, 1fr)); /**(4, 60px, 31em)  (auto-fit, 255px, 15.5em)**/ 
+  grid-column-gap: 1.8em;
+  grid-row-gap: 1.5em;
+}
+
+.profile-box, .overview-box{
+  border-radius: 4.4px;
+}
+
+.switch {
+  outline:1px solid re;
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2.8px;
+    bottom: 3.333px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:hover + .slider{
+    background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+  }
+  
+  input:checked + .slider {
+    background: hsl(230, 22%, 74%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(230, 22%, 74%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .profile-box{
+    text-align: center;
+    padding-top: 1em;
+    position: relative;
+  }
+
+  .profile-box:nth-child(1){
+    border-top: 4.4px solid hsl(208, 92%, 53%);
+  }
+  .profile-box:nth-child(2){
+    border-top: 4.4px solid hsl(203, 89%, 53%);
+  }
+  #profile-3 .profile-box{
+    border-top: 4.4px solid;
+    border-image-source: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+    border-image-slice: 1;
+  }
+  .profile-box:nth-child(4){
+    border-top: 4.4px solid red;
+  }
+
+  #profile-3{
+    border-radius: 4.4px;
+    overflow: hidden;
+  }
+
+  .name-box{
+    outline: 1px solid re;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .name{
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 1em;
+  }
+  .followers-box{
+    outline: 1px solid re;
+    height: 5.5em;
+    margin-top: -2.5em;
+    margin-bottom: 0.8em;
+  }
+  .follow-nos{
+    outline: 1px solid re;
+    font-size: 54px;
+    font-weight: bold;
+  }
+  .follow-type{
+    outline: 3px solid gree;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: -3.5em;
+  }
+  .follow-change-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .follow-change-box svg{
+    padding-top: 0.1em;
+  }
+
+  .follow-change{
+    font-size: 14px;
+    color: hsl(163, 72%, 41%);
+    margin-left: 0.4em;
+  }
+  #fc-last{
+    color: hsl(356, 69%, 56%);
+  }
+
+  #upper-boards{
+    margin-bottom: 2.5em;
+  }
+
+  #lower-title-box{
+    margin-bottom: 1.2em;
+  }
+  .lower-title{
+    font-size: 22px;
+  }
+
+  .stat-name-box{
+    outline: 1px solid re;
+    display: flex;
+    align-items: center;
+  }
+  .stat-name{
+    font-size: 14px;
+    height: 1.5em;
+    padding-top: 0.2em;
+    outline: 1px solid gree;
+    background-image: url(../images/icon-facebook.svg);
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    width: 100%
+  }
+  .stats{
+    outline: 1px solid re;
+    display: flex;
+    align-items: center;
+    height: 3em;
+  }
+  .stat-nos{
+    outline: 1px solid re;
+    font-size: 28px;
+    font-weight: bold;
+    width: 50%;
+  }
+  .stat-cent{
+    outline: 1px solid re;
+    width: 50%;
+    text-align: end;
+    font-size: 14px;
+  }
+  .stat-cent svg{
+    padding-bottom: 0.2em;
+  }
+
+  .overview-box{
+    padding: 0em 1.8em 0.7em 1.5em;
+  }
+
+
+  .text-green{
+    color: hsl(163, 72%, 41%);
+  }
+  .text-red{
+    color:hsl(356, 69%, 56%);
+  }
+
+  .o-twitter-icon{
+    background-image: url(../images/icon-twitter.svg);
+  }
+  .o-facebook-icon{
+    background-image: url(../images/icon-facebook.svg);
+  }
+  .o-instagram-icon{
+    background-image: url(../images/icon-instagram.svg);
+  }
+  .o-youtube-icon{
+    background-image: url(../images/icon-youtube.svg);
+  }
+
+
+  @media (max-width:768px){
+    body{
+      background-attachment: scroll;
+    }
+    #container{
+      padding: 1em 2em 1em 2em;
+    }
+
+    .board{
+      grid-row-gap: 1.2em;
+    }
+
+    #top{
+      flex-direction: column;
+      margin-bottom: 2em;
+    }
+    .heading{
+      box-sizing: border-box;
+      width: 100%;
+      border-bottom: 1px solid hsl(228, 34%, 66%);
+      padding-bottom: 0.4em;
+    }
+    .theme-switch{
+      position: relative;
+      outline: 2px solid re;
+      width: 100%;
+    }
+  
+  }
+
+  @media (max-width: 425px){
+    .theme-switch{
+      justify-content: flex-start;
+    }
+    .switch{
+      position: absolute;
+      right: 0;
+    }
+  }
