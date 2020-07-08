@@ -1,5 +1,3 @@
-@import url('https://fonts.google.com/specimen/Inter');
-
 body{
   box-sizing: border-box;
     font-family: "Inter",san-serif;
@@ -19,7 +17,6 @@ body{
 
 #top{
   box-sizing: border-box;
-  outline: 1px solid re;
   display: flex;
   flex-direction: row;
   margin-bottom: 2em;
@@ -41,20 +38,16 @@ body{
 
 .heading{
   box-sizing: border-box;
-  outline: 1px solid re;
   width: 50%;
 }
 
 #title{
-  outline: 1px solid re;
   margin-bottom: 0;
 }
 #total-followers{
-  outline: 1px solid re;
 }
 
 .theme-switch{
-  outline: 1px solid blu;
   display: flex;
   align-items: center;
   width: 50%;
@@ -62,7 +55,6 @@ body{
 }
 
 #mode-name{
-  outline: 1px solid re;
   font-size: 0.85em;
   font-weight: 700;
   margin-right: 1em;
@@ -80,7 +72,6 @@ body{
 }
 
 .switch {
-  outline:1px solid re;
     position: relative;
     display: inline-block;
     width: 48px;
@@ -173,7 +164,6 @@ body{
   }
 
   .name-box{
-    outline: 1px solid re;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,18 +174,15 @@ body{
       margin-left: 1em;
   }
   .followers-box{
-    outline: 1px solid re;
     height: 5.5em;
     margin-top: -2.5em;
     margin-bottom: 0.8em;
   }
   .follow-nos{
-    outline: 1px solid re;
     font-size: 54px;
     font-weight: bold;
   }
   .follow-type{
-    outline: 3px solid gree;
     font-weight: 300;
     font-size: 14px;
     margin-top: -3.5em;
@@ -230,7 +217,6 @@ body{
   }
 
   .stat-name-box{
-    outline: 1px solid re;
     display: flex;
     align-items: center;
   }
@@ -238,7 +224,6 @@ body{
     font-size: 14px;
     height: 1.5em;
     padding-top: 0.2em;
-    outline: 1px solid gree;
     background-image: url(../images/icon-facebook.svg);
     background-position-x: 100%;
     background-position-y: 50%;
@@ -246,19 +231,16 @@ body{
     width: 100%
   }
   .stats{
-    outline: 1px solid re;
     display: flex;
     align-items: center;
     height: 3em;
   }
   .stat-nos{
-    outline: 1px solid re;
     font-size: 28px;
     font-weight: bold;
     width: 50%;
   }
   .stat-cent{
-    outline: 1px solid re;
     width: 50%;
     text-align: end;
     font-size: 14px;
@@ -292,6 +274,11 @@ body{
     background-image: url(../images/icon-youtube.svg);
   }
 
+@media (max-width:1024px){
+    body{
+      background-attachment: scroll;
+    }
+  }
 
   @media (max-width:768px){
     body{
@@ -317,7 +304,6 @@ body{
     }
     .theme-switch{
       position: relative;
-      outline: 2px solid re;
       width: 100%;
     }
   
